@@ -1,0 +1,3 @@
+rootProject.name = 'ReactNativeChecklists'
+
+include ':app'
