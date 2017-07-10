@@ -29,11 +29,10 @@ class Checklists extends Component {
 
     constructor(props) {
         super(props);
-        this._onPressToDetails = this._onPressToDetails.bind(this);
     }
 
     componentDidMount() {
-        this.props.fetchProducts();
+        this.props.fetchChecklists();
     }
 
     render() {
@@ -41,8 +40,8 @@ class Checklists extends Component {
             <View style={styles.container}>
                 <FlatList data={this.props.checklists}
                           renderItem={({item}) =>
-                              <TouchableOpacity onPress={this._onPressToDetails(item)}>
-                                  <Text style={styles.item}>{item.name}</Text>
+                              <TouchableOpacity onPress={this._onPressToDetails.bind(this, item)}>
+                                  <Text style={styles.item}>{item.text}</Text>
                               </TouchableOpacity>}
                 />
             </View>

@@ -28,7 +28,7 @@ class ChecklistDetails extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.item}>Hello</Text>
+                <Text style={styles.item}>{this.props.text}</Text>
             </View>
         )
     }

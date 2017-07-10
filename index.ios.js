@@ -9,8 +9,8 @@ registerScreens(store, Provider);
 
 Navigation.startSingleScreenApp({
     screen: {
-        screen: 'example.ProductsList',
-        title: 'Welcome',
+        screen: 'example.Checklists',
+        title: 'Checklists',
         navigatorStyle: {},
     }
 });
